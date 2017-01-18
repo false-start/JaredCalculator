@@ -45,12 +45,14 @@ $(document).ready(function(){
                 element.click(function(event){
                     event.preventDefault();
                     // This will remove the pretty border on
-                    // any of the functions. Since
+                    // any of the function buttons. Since
                     // there is more than one function button,
                     // jQuery runs remove calls on all of the
                     // returned elements.
                     $(".functions").removeClass("selected");
                     element.addClass("selected");
+                    // Attr is how I get any html attribute on
+                    // any given element.
                     var func = element.attr("id");
 
                     that.updateOperator(func);
