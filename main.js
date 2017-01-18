@@ -87,7 +87,7 @@ $(document).ready(function(){
         execute: function(){
             var total = this.total || 0;
             total = this.currentOperator.call(this, parseInt(this.left), parseInt(this.right));
-            this.left = Object.toString(total);
+            this.left = total.toString();
             this.display.html(total);
         }
     };
