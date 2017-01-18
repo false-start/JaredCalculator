@@ -77,8 +77,8 @@ $(document).ready(function(){
             this.mode = this.mode === "left" ? "right" : "left";
         },
         clear: function() {
-            this.left = "0";
-            this.right = "0";
+            this.left = "";
+            this.right = "";
             this.mode = "right";
             $(".functions").removeClass("selected");
             this.currentOperator = {};
