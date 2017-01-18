@@ -1,0 +1,51 @@
+.display {
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    flex-flow:row nowrap;
+    height: 30em;
+    width: 25em;
+}
+
+.numbers-container {
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.functions-container {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.numbers,
+.functions,
+.clear,
+.equals {
+    flex: 1 1 33%;
+    color: #000;
+    font-size: 3em;
+    height: 25%;
+    background-color: grey;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.functions,
+.equals {
+    flex: 1 1 20%;
+    background-color: orange;
+    color: #FFF;
+    border: 2px solid orange;
+}
+.selected {
+    border-color: #FFF;
+}
+.zero {
+    flex: 1 1 66%;
+}
